@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1077275751348",
+    "firebase_url": "https://sms-login-poc.firebaseio.com",
+    "project_id": "sms-login-poc",
+    "storage_bucket": "sms-login-poc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077275751348:android:7dc10a2d67a575f3",
+        "android_client_info": {
+          "package_name": "cl.kunder.smslogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077275751348-ga8et5c5tcd3i3vgn2oas9i27ritn0g9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cl.kunder.smslogin",
+            "certificate_hash": "6b4d694f276f38a60865ed935012c46579d44a54"
+          }
+        },
+        {
+          "client_id": "1077275751348-oft7uqlk1gftpnk67qa9ofl646a462s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6Bi68RyAqBSwAKIZPZ4dyImO8WZpkrt8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077275751348-oft7uqlk1gftpnk67qa9ofl646a462s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
