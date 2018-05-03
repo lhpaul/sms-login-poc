@@ -1,23 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Validación
+      Validation
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page6">
-  <form id="validaciN-form2">
-    <ion-list id="validaciN-list2">
-      <ion-item id="validaciN-input4">
+<ion-content padding>
+  <form [formGroup]="form" (ngSubmit)="validate()">
+    <ion-list>
+      <ion-item>
         <ion-label>
-          Clave SMS
+          SMS Code
         </ion-label>
-        <ion-input type="number" placeholder="123456" name="otp"></ion-input>
+        <ion-input type="number" placeholder="697891" formControlName="code"></ion-input>
       </ion-item>
     </ion-list>
-    <div class="spacer" style="height:40px;" id="validaciN-spacer2"></div>
-    <button id="validaciN-button2" ion-button color="stable" block on-click="goToCameraTabDefaultPage()">
-      Validar
+    <div class="spacer" style="height:40px;"></div>
+    <button ion-button color="stable" block type="submit" [disabled]="!form.valid">
+      Validate
     </button>
   </form>
 </ion-content>

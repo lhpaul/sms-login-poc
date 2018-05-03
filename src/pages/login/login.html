@@ -5,19 +5,20 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page5">
-  <form id="login-form1">
-    <ion-list id="login-list1">
-      <ion-item id="login-input2">
+<ion-content padding id="login-page">
+  <form [formGroup]="form" (ngSubmit)="sendOtp()">
+    <ion-list>
+      <ion-item>
         <ion-label>
-          # Celular
+          Phone Number
         </ion-label>
-        <ion-input type="tel" placeholder="+56973981015" name="phone"></ion-input>
+        <ion-input type="tel" placeholder="+56973981015" formControlName="phoneNumber"></ion-input>
       </ion-item>
     </ion-list>
-    <div class="spacer" style="height:40px;" id="login-spacer1"></div>
-    <button id="login-button1" ion-button color="stable" block on-click="goToValidaciN()">
-      Ingresar
+    <div class="spacer" style="height:40px;"></div>
+    <button ion-button color="stable" block type="submit" [disabled]="!form.valid">
+      Continue
     </button>
   </form>
+  <div>{{error}}</div>
 </ion-content>
