@@ -16,6 +16,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { ValidationPage } from '../pages/validation/validation';
 
 import { AuthProvider } from '../providers/auth/auth';
+import { SmsReceiverProvider } from '../providers/sms-receiver/sms-receiver';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -49,6 +50,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   providers: [
     AuthProvider,
+    SmsReceiverProvider,
     SplashScreen,
     StatusBar,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

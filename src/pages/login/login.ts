@@ -21,7 +21,7 @@ export class LoginPage {
   }
 
   sendOtp() {
-    const loading = this.loadingCtrl.create({ content: 'Enviando SMS...' });
+    const loading = this.loadingCtrl.create({ content: 'Sending SMS...' });
     loading.present();
     this.auth.sendOtp(this.form.value.phoneNumber)
     .then((credential: any) => {
